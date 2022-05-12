@@ -122,7 +122,7 @@ def main():
     print(args)
 
     if  args.username:
-        for i in args.username:
+        for user in args.username:
             for i in get_projects(user):
                 hash_id = str(i).replace("</guid>", '').split("/")[-1]
                 # print(hash_id)
@@ -148,16 +148,4 @@ def main():
 
 
 main()
-
-
-    
-
-                    
-    
-
-
-
-
-
-
 
