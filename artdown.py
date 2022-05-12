@@ -2,7 +2,6 @@ import os
 from bs4 import BeautifulSoup
 import urllib.request
 from urllib.parse import urlparse
-import cloudscraper
 import time
 from concurrent import futures
 from multiprocessing import cpu_count
