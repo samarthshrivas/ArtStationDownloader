@@ -1,13 +1,13 @@
 # ArtStationDownloader
 This tools helps you to download images of user from ArtStation
 
-# USAGE
+## Download
 Clone this repo 
 
 `git clone https://github.com/samarthshrivas/ArtStationDownloader.git`
 
-
-`
+## USAGE
+```
 python artsunc.py -h
 usage: ArtStationDownloader [-h] [-u [USERNAME ...]] [-d DIRECTORY] [-f FILE]
 
@@ -20,12 +20,12 @@ optional arguments:
   -d DIRECTORY, --directory DIRECTORY
                         output directory
   -f FILE, --file FILE  input text file
-`
+```
 
-## For file 
-`python artsunc.py -f art.txt `
+## Download from text file file 
+`python artsunc.py -f art.txt`
 
-## For multiple 
+## Download from  multiple artist 
 `python artsunc.py -u artist1 artist2`
 
 
