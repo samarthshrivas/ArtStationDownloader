@@ -8,7 +8,7 @@ Clone this repo
 
 ## USAGE
 
-###HELP
+### HELP
 ```
 python artsunc.py -h
 usage: ArtStationDownloader [-h] [-u [USERNAME ...]] [-d DIRECTORY] [-f FILE]
@@ -29,5 +29,5 @@ optional arguments:
 `python artsunc.py -u artist1 artist2`
 
 
-###Used his code
+### Used his code
 [findix](https://github.com/findix/ArtStationDownloader)
