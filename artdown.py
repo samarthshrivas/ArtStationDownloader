@@ -58,7 +58,7 @@ def get_projects(username):
     while True:
         page  += 1
         print(f'\n==========Get page {page}==========')
-        soup = BeautifulSoup(rget(f'https://{username}.artstation.com/rss?page={page}').content, 'lxml')
+        soup = BeautifulSoup(rget(f'https://{username}.artstation.com/rss?page={page}').content, 'lxml') # no cloudflare
         if len(soup.find_all('guid')) != 0:
             lis.extend(soup.find_all('guid'))
         elif len(soup.find_all('guid')) == 0:
@@ -82,7 +82,7 @@ def download_file(url, file_path, file_name):
 
 
 def download_project(hash_id):
-        url = 'https://www.artstation.com/projects/{}.json'.format(hash_id)
+        url = 'https://www.artstation.com/projects/{}.json'.format(hash_id) # no cloudflare
         try:
             r = rget(url)
         except :
