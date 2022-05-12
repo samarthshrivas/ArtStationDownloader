@@ -17,8 +17,6 @@ optional arguments:
   -h, --help            show this help message and exit
   -u [USERNAME ...], --username [USERNAME ...]
                         choose who's project you want to download, one or more
-  -d DIRECTORY, --directory DIRECTORY
-                        output directory
   -f FILE, --file FILE  input text file
 ```
 
