@@ -116,7 +116,6 @@ def main():
         description='ArtStation Downloader is a lightweight tool to help you download images from the ArtStation')
     parser.add_argument('-u', '--username',
                         help='choose who\'s project you want to download, one or more', nargs='*')
-    parser.add_argument('-d', '--directory', help='output directory')
     parser.add_argument('-f', '--file', help='input text file')
     
     args = parser.parse_args()
