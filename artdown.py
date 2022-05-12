@@ -1,5 +1,3 @@
-# import cloudscraper
-# requests = cloudscraper.create_scraper()
 import os 
 from bs4 import BeautifulSoup
 import urllib.request
@@ -11,7 +9,7 @@ from multiprocessing import cpu_count
 import requests
 root_path = "ArtStation"
 
-max_workers = cpu_count()*512
+max_workers = cpu_count()*4
 # print("max_workers: ",max_workers)
 executor = futures.ThreadPoolExecutor(max_workers)
 futures = []
@@ -27,18 +25,6 @@ def rget(url):
     except Exception as e:
         print(e)
         print(url)
-    # for i in range(20):
-    #     scraper = cloudscraper.create_scraper()
-    #     g = scraper.get(url)
-    #     if g.status_code == 200 :
-    #         return g
-    #         break
-    #     else:
-    #         print(f"trying again {g} {url}", end = "\r")
-            
-    #         time.sleep(2)
-    # print("stucked on cloudflare protection tried 20 times")
-    
 
 
 def download(url, path, filename):
@@ -170,19 +156,6 @@ def main():
 
 
 main()
-
-
-# if __name__ == "__main__":
-#     root_path = "Wall\ARTs"
-#     with open('art.txt','r') as f:
-#         for user in f.read().splitlines():
-#             for i in get_projects(user):
-#                 hash_id = str(i).replace("</guid>", '').split("/")[-1]
-#                 # print(hash_id)
-#                 try:
-#                     download_project(hash_id)
-#                 except:
-#                     pass
 
 
     
