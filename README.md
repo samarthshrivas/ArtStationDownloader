@@ -2,6 +2,6 @@
 This tools helps you to download images of user from ArtStation
 
 # USAGE
+Clone this repo 
 
-clone this repo 
-git clone 
+'git clone https://github.com/samarthshrivas/ArtStationDownloader.git'
