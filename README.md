@@ -7,6 +7,8 @@ Clone this repo
 `git clone https://github.com/samarthshrivas/ArtStationDownloader.git`
 
 ## USAGE
+
+###HELP
 ```
 python artsunc.py -h
 usage: ArtStationDownloader [-h] [-u [USERNAME ...]] [-d DIRECTORY] [-f FILE]
