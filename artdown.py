@@ -148,13 +148,6 @@ def main():
             print(f"{args.file} DOES NOT EXIST")
 
 
-
-
-    if args.directory:
-        root_path = args.directory
-
-
-
 main()
 
 
