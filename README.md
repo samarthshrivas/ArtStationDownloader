@@ -29,3 +29,5 @@ optional arguments:
 `python artsunc.py -u artist1 artist2`
 
 
+###Used his code
+[findix](https://github.com/findix/ArtStationDownloader)
